@@ -8,11 +8,14 @@ li {
     position: relative;
     text-decoration: none;
     transition-duration: 0.5s;
-    color: white;
+    color: white;   
+    
 }
 li:hover {
       background: #e91e63;
       cursor: pointer;
+      border-bottom: 2px solid white;
+
 }
 ul li ul {
     background: #266fed;
@@ -23,6 +26,7 @@ ul li ul {
     text-align: left;
     display: none;
     padding-inline-start: 0rem;
+    width:9rem;
 }
 ul li:hover > ul,
 ul li ul:hover {
