@@ -26,6 +26,7 @@ ul li ul {
     transition: all 0.5s ease;
     display: block;
     padding-inline-start: 0rem;
+    animation-name: mystyle;
 }
 .dropdown :last-child {
     border-bottom: none;
@@ -40,7 +41,7 @@ ul li ul:hover {
     top: 0;
     left:10rem;
 }
-@keyframes dropdown {
+@keyframes mystyle {
     from {top: 1rem;}
     to {top:2rem;}
 }
