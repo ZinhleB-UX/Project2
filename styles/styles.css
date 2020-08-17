@@ -2,53 +2,54 @@ body{
     background:linear-gradient(cornflowerblue,#03A9F4);
     height: 100vh;
 }
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family:'Times New Roman';
+}
 li {
-    display: inline-block;
+    padding: 0 1rem 1rem 0;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     position: relative;
-    text-decoration: none;
-    transition-duration: 0.5s;
-    width: 10rem;
-    height: 2rem;
+    border-bottom: none;
+    font-size: 32px;
 }
 li:hover {
     background: #e91e63;
     cursor: pointer;
     border-bottom: 1px solid white;
 }
-ul li ul {
-    top:100%;
-    left:0;
+.dropdown {
     background: #266fed;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
     display: block;
-    padding-inline-start: 0rem;
+    float: left;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: 0 0 5px 0 rgba(1, 1, 1, 0.75);  
 }
 .dropdown :last-child {
-    border-bottom: none;
+    border-bottom: none;  
 }
 .grand {
-    top: 0;
-    left:10rem;
+    background: #266fed;
+    display: block;
+    float: left;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: 0 0 5px 0 rgba(1, 1, 1, 0.75);
 }
 ul li:hover > ul,
 ul li ul:hover {
     visibility: visible;
-    opacity: 1;
-    display: block;
-    box-shadow: 5px 5px 5px #181717;
-    animation-name: dropdown 0.5s ease;
+    animation: mine 0.5s ;
 }
-@keyframes dropdown {
-    from {top: 0rem;}
-    to {top:4rem;}
+@keyframes mine {
+    from {top: 1rem;}
+    top {top: 2rem;}
 }
-
-
-
-  
-
-
-
